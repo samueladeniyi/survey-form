@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>samuel adeniyi survey form freecodecamp</title>
+ <style>
+     body{
+  text-align:center;
+  background-color:#E2AD9B;
+}
+.input {
+  width:40%;
+  height:30px;
+  display:inline-block;
+  margin: 0 10px 0 0;
+}
+
+#three{
+  position:relative;
+  padding:0px 500px 0px 0px;
+}
+#surform{
+  text-align:left;
+  margin-left:100px
+}
+
+.radio{
+  float:left;
+}
+
+.imp{
+  float:left;
+}
+
+#comments{
+  height:100px;
+  width:400px; 
+}
+
+#submit{
+  height:30px;
+  width:70px;
+}
+      </style>
+  </head>
+  <body>
+
+<h1 id="title">New Employee Survey Form</h1>
+        <p id="description">Instructions to Manager regarding New Hire Survey:</p><br>
+  <br>
+  Please give the employee the following questionnaire after their first three months with your area. <br>Then meet with the employee to discuss their answers and potential areas of improvement for <br>management/the department moving forward, both for this employee and for future hires.
+<p id="three"><b>Three-Month Survey</b></>
+</p>
+<div id="surform">
+<form id="survey-form" method="POST">
+  <div> <label id="name-label">*Name:</label>
+  <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required /> </div>
+  <br><br>
+ <div>
+   <div><label id="email-label">*Email:</label>
+  <input type="email" name="email" id="email" class="input" placeholder="Enter your email" required /> </div>
+   <br><br>
+   
+   <div><label id="number-label">*Age:</label>
+  <input type="number" name="age" id="number" class="input" placeholder="Enter your age" min="1" max="125" required /> </div>
+   
+  <br><br>
+   <div><label="number-label">1. My supervisor has clearly communicated my job responsibilities to me.</label><br>
+     <select id="dropdown" name="jobres" id="dropdown"  class="dropdown"><option disabled value>select an option </option>
+       <option value="stronglyagree">Strongly Agree </option>
+       <option value="agree">Agree </option>
+       <option value="neither">Neither</option>
+       <option value="disagree">Disagree</option>
+       <option value="stronglydisagree">Strongly Disagree </option>
+     </select></div>
+   <br>
+   <div>2. I have the tools and resources necessary to do my job well.<ul style="list-style:none;">
+     
+     <li class="radio"><label>Strongly Agree<input name="radio-button" value="1" type="radio">&ensp;</label></li>
+     
+     <li class="radio"><label>Agree <input name="radio-button" value="2" type="radio">&ensp;</label></li>
+     
+     <li class="radio"><label>Neither<input name="radio-button" value="3" type="radio">&ensp;</label></li>
+     
+     <li class="radio"><label>Disagree<input name="radio-button" value="3" type="radio">&ensp;</label></li>
+     
+     <li class="radio"><label>Strongly Disagree<input name="radio-button" value="3" type="radio"></label></li>
+     </div>
+     <br><br>
+ <div><label="number-label">3. At work, I am consistently able to put my talents to work in my position.</label><br>
+     <select id="dropdown" name="jobres"  class="dropdown"><option disabled value>select an option </option>
+       <option value="stronglyagree">Strongly Agree </option>
+       <option value="agree">Agree </option>
+       <option value="neither">Neither</option>
+       <option value="disagree">Disagree</option>
+       <option value="stronglydisagree">Strongly Disagree </option>
+     </select></div>
+     <br><br>
+     <div><label="number-label">4. My supervisor recognizes the good work that I do on a regular basis.</label><br>
+     <select id="dropdown" name="jobres"  class="dropdown"><option disabled value>select an option </option>
+       <option value="stronglyagree">Strongly Agree </option>
+       <option value="agree">Agree </option>
+       <option value="neither">Neither</option>
+       <option value="disagree">Disagree</option>
+       <option value="stronglydisagree">Strongly Disagree </option>
+     </select></div>
+     
+     <br><br>
+     
+     <div><label>5. What do you consider important to you in the work place?&nbsp;check all that apply</label><br>
+       <ul style="list-style:none;">
+         <li class="imp"><label>Salary<input name="important" value="1" type="checkbox" /></label></li>
+     
+     <li class="imp" ><label>Job satisfaction<input name="important" value="2" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Career Advancement<input name="important" value="3" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Vacation<input name="important" value="4" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Working Conditions<input name="important" value="5" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Health Insurance<input name="important" value="6" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Pension<input name="important" value="7" type="checkbox" />&nbsp;</label></li>
+     
+     <li class="imp" ><label>Allowance<input name="important" value="8" type="checkbox" />&nbsp;</label></li>
+       </ul>
+     </div>
+  <br><br><br>
+  
+ <div><label>In the space below, please provide any clarifying comments regarding the questions you answered above or add any other comments you may have.</label><br><br><textarea id="comments" name="comment" placeholder="please enter your comments"></textarea>
+ </div>
+  <button id="submit" type="submit">Submit</button>
+</form>
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
